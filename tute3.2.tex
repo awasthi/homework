@@ -1,0 +1,49 @@
+\documentclass[11pt,addpoints,answers]{exam}
+\input{header}
+\newcommand{\hwnum}{2}
+\asheader                       % execute homework commands
+\pagestyle{head}                % put header on every page
+\begin{document}
+
+\noindent{\bf Topics:} Limit, Continuity, Differentiability.\\
+\noindent{\bf Definition:} Let $f\;:\;\C \rightarrow \; \C$ be defined  around a point $z_0$ (not necessarily at $z_0$) in $\C$. We say that the limit of $f(z)$ at $z_0$ exists and equal to number $\ell\in \C$, denoted by 
+\[\lim_{z\rightarrow z_0}f(z)=\ell\]
+if for each $\epsilon$ there is a $\delta>0$ such that
+\(
+|f(z)-f(z_0)|<\epsilon\quad\mbox{whenever}\quad |z-z_0|<\delta.
+\)
+\\
+\hrule$~~$\\
+
+\begin{questions}
+\question Use $\epsilon-\delta$ definition to show that \quad
+\(\mathlarger{\lim_{z\rightarrow z_0}\alpha=\alpha.}\) and \(\mathlarger{\lim_{z\rightarrow z_0}z=z_0.} 
+\) (Here $\alpha \in \C$ is a given constant.)
+
+\question By producing two paths, show that  limit of the following functions at a given point $z_0$ do not exists.
+\begin{enumerate} 
+\item [$($\rm a$)$] $f(z)=\mathlarger{\left(\frac{z}{\bar{z}}\right)^2} \mbox{\;at\;} z_0=0$
+\item [$($\rm b$)$] $f(z)=\mathlarger{z^{1/2}}\mbox{\;at\;} z_0=-1.$  Here $f(z)$ is taken to be the principal branch. 
+\end{enumerate}
+
+\question  Let $\mathlarger{\lim_{z\rightarrow z_0}}f_1(z)=\ell_1$ and $\mathlarger{\lim_{z\rightarrow z_0}}f_2(z)=\ell_2$. Then prove (by using $\epsilon-\delta$ definition) any two of the following facts:
+\begin{enumerate} 
+\item [$($\rm a$)$] $\mathlarger{\lim_{z\rightarrow z_0}\left(f_1(z)+f_2(z)\right)}=\ell_1+\ell_2$.
+\item [$($\rm b$)$] $\mathlarger{\lim_{z\rightarrow z_0}\left(f_1(z)\cdot f_2(z)\right)}=\ell_1\cdot \ell_2$.
+\item [$($\rm c$)$] $\mathlarger{\lim_{z\rightarrow z_0}\left(\frac{f_1(z)}{f_2(z)}\right)=\frac{\ell_1}{\ell_2}}$ \quad provided $\ell_2\neq 0$.
+\item [$($\rm d$)$]  For a given $\alpha \in \C$, $\mathlarger{\lim_{z\rightarrow z_0}}\left(\alpha\cdot f_1(z)\right)=\alpha\cdot \ell_1$.
+\item [$($\rm e$)$]  Suppose $f(z)=u(x,y)+\iota v(x,y)$ for $z=x+\iota y\in \C$. Then at $z_0=x_0+\iota y_0$ in $\C$ 
+\[
+\lim_{z\rightarrow z_0}f(z)=a+\iota b \;\;\iff \;\lim_{(x,y)\rightarrow (x_0,y_0)}u(x,y)=a \;\;\;\&\;\lim_{(x,y)\rightarrow (x_0,y_0)}v(x,y)=b.
+\]
+\end{enumerate}
+
+\question  Define the continuity of $f(z)$ at a point $z_0$. Use the above facts to prove the following:
+\begin{enumerate} 
+\item [$($\rm a$)$] All polynomials  are continuous on entire complex plane  $\C$.
+\item [$($\rm b$)$] All rationals functions $R(z)=\mathlarger{\frac{f(z)}{g(z)}}$are continuous on whole complex plane except where $g(z)=0$.
+\end{enumerate} 
+
+\end{questions}
+
+\end{document}

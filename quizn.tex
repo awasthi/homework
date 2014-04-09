@@ -1,0 +1,81 @@
+% %&latex
+\documentclass[12pt]{examdesign}
+\usepackage{amsmath,amssymb}
+\usepackage{pifont}
+\SectionFont{\large\sffamily}
+\Fullpages
+\NoKey
+\ContinuousNumbering
+\ShortKey
+\ConstantBlanks{80pt}
+\DefineAnswerWrapper{}{}
+\NumberOfVersions{3}
+%\IncludeFromFile{foobar.tex}
+%\class{{\Large Gautam Buddha University}\\Department of Applied Mathematics\\Engineering Mathematics-II (MA-102)}
+
+
+\class
+{
+{\Large Gautam Buddha University} \\
+Department of Applied Mathematics \\
+MA102 : Engineering Mathematics-II
+}
+\examname{Quiz-1}
+\begin{document}
+\begin{exampreface}
+\hrule
+\vspace{0.5cm}
+{\noindent \bf Note:~}
+Write the answer only on the given space. Rough work can be done on the back side of the given quiz sheet. More than one answers (Overwriting) will carry no marks.
+\end{exampreface}
+\begin{examclosing}
+{\bf Notations:} $\textbf{A}=$ stands for matrix,  $\mathbb{R}=$ the set of all real numbers,  $\textbf{x}=$ denotes a column matrix, $A^t=$ transpose of matrix $A$.
+\end{examclosing}
+
+
+
+%\begin{truefalse}[title={True/False (5 pts each)},   resetcounter=yes,suppressprefix]
+\begin{truefalse}[title={State True or False},
+%resetcounter=yes,suppressprefix
+]
+\begin{question}
+ \answer{True} Suppose $\textbf{A}$ is skew symmetric. Then all the diagonal entries are zero.
+\end{question}
+\begin{question}
+\answer{True} The inverse of a non-singular symmetric matrix $\textbf{A}$ is not symmetric.
+\end{question}
+\begin{question}
+\answer{False} For any $k\in \mathbb R$, the linear system $\textbf{Ax}=k\textbf{x}$ is always consistent.
+\end{question}
+
+\begin{question}
+\answer{True} Product of two non-singular matrices need not be non-singular.
+\end{question}
+
+\begin{question}
+\answer{True} Suppose $\textbf{A}$ are $\textbf{B}$ are two row-equivalent. Their singularities will change together.
+\end{question}
+
+\begin{question}
+\answer{True} The formula \;$(AB+c)^t=A^tB^t+C^t$\; hold in general.
+\end{question}
+\end{truefalse}
+
+\begin{fillin}[title={~}]
+  
+\begin{question}
+  For a non-singular matrix $\textbf{A}$, the relation between\; det$(\textbf{A}^{-1})$ and det$(\textbf{A})$  is \blank{det(A)=det(A)}
+\end{question}
+\begin{question}
+Suppose $\textbf{A}$ is skew symmetric matrix of order $n$. For what values of $n$, \;det$(\textbf{A})=0$. \blank{Even}
+\end{question}
+\begin{question}
+ Write the normal form of a matrix $\textbf{A}$ of order $3\times 5$ with rank$\textbf{A}=3$ \blank{Normal Form}
+\end{question}
+\begin{question}
+ For a consistent linear system $\textbf{Ax}={B}$, if \;rank$\,{\bf A}<$ numbers of unknowns. How many solution(s) the system has? \blank{infinte}
+\end{question}
+\end{fillin}
+
+\end{document}
+
